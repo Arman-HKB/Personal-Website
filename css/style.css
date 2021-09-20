@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-image: url("../images/mosaic.png");
+  overflow: overlay;
+}
+
+img {
+  pointer-events: none;
+}
+
+.coordonates {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #338991;
+}
+
+h1 {
+  color: #1d656b;
+  font-weight: 600;
+  font-size: 3rem;
+  opacity: 0.8;
+}
+
+h2,
+p {
+  color: #338991;
+  font-weight: 500;
+  opacity: 0.8;
+
+}
+
+h3 {
+  color: #1d656b;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+p:not(.user-info p) {
+  margin-bottom: 0;
+}
+
+/* PAGE */
+main {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass {
+  background: white;
+  min-height: 80vh;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 1rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  display: flex;
+}
+
+/* LEFT SIDE */
+
+.left-side {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.user-info, .left-component {
+  margin: 2rem 0rem;
+  padding: 1rem 5rem;
+}
+
+.user-info img {
+  width: 75%;
+  height: auto;
+  border: #488388 5px solid;
+}
+
+.coordonates i {
+  font-size: x-large;
+}
+
+.coordonates a {
+  text-decoration: none;
+  color: #338991;
+}
+
+.left-component p:not(.small) {
+  font-size: larger;
+}
+
+/* RIGHT SIDE */
+.themes {
+  justify-content:flex-end!important;
+}
+
+.right-side {
+  margin: 5rem;
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.right-component {
+  margin: 2rem 0rem;
+}
+
+.right-component p:not(.small) {
+  font-size: larger;
+}
+
+.right-component a {
+  color: #338991;
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+  width: auto;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  backdrop-filter: blur(2rem);
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #338991; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1d656b; 
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 991px) {
+  .left-side {
+    border-radius: 1rem;
+    border-radius: 1rem;
+  }
+  
+  .position-absolute {
+    position: unset!important;
+  }
+
+  .top-0 {border-top:unset!important}
+  .end-0 {border-right:unset!important}
+
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    background-image: url("../images/mosaic-phone.png");
+  }
+
+  .left-side-info {
+    display: none;
+  }
+
+  .right-component, .title {
+    text-align: center;
+  }
+
+  p:not(.user-info p, .small) {
+    font-size: small;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+
+  .themes {
+    justify-content:center!important;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .glass, .left-side {
+    border-radius: 0;
+    border-radius: 0;
+  }
+}
+
+/* COLOR THEMES */
+.color-mode, .language-mode {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  border: none;
+}
+
+.blue {
+  background-color: #8ee4ec;
+}
+
+.red {
+  background-color: rgb(167, 104, 104);
+}
+
+.green {
+  background-color: rgb(98, 146, 98);
+}
+
+.vertical-divider {
+  border-left: 3px solid #488388;
+  height: auto;
+}
+
+.french {
+  background-image: url('../images/fr.png');
+
+}
+
+.english {
+  background-image: url('../images/uk.png');
+
+}

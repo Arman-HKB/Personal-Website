@@ -1,0 +1,38 @@
+* {
+    color: rgb(57, 117, 57)!important;
+}
+
+body {
+    background-image: url("../images/trees.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1, h3 {
+    color: rgb(37, 77, 37)!important;
+}
+
+.user-info img {
+    width: 75%;
+    height: auto;
+    border: rgb(37, 77, 37) 5px solid;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(57, 117, 57); 
+}
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(37, 77, 37); 
+}
+
+.vertical-divider {
+    border-left: 3px solid rgb(37, 77, 37);
+    height: auto;
+}
+
+@media screen and (max-width: 767px) {
+    body {
+      background: rgb(98, 146, 98);
+    }
+}  

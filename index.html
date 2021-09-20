@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arman Hakobyan</title>
+    <link rel="icon" type="image/png" href="images/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5449993dab.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--COLOR CHANGE-->
+    <link id="pageColor" rel="stylesheet" href="">
+  </head>
+  <body>
+    <main class="container">
+      <section class="glass row">
+        <div class="left-side col d-flex flex-column align-items-center text-center">
+          <div class="user-info">
+            <img class="img-fluid rounded-circle mb-2" src="./images/photo.png" alt=""/>
+            <h3>ARMAN HAKOBYAN</h3>
+            <p class="mb-0">Développeur, 21 ans</p>
+            <p>Sophia Antipolis</p>
+            <div class="coordonates">
+              <a href="tel:0624187135"><i class="fas fa-mobile-alt"></i></a>
+              <a href="mailto:arman.hakobyan@etu.univ-cotedazur.fr"><i class="far fa-envelope"></i></a>
+            </div>
+          </div>
+          <div class="left-side-info">
+            <div class="left-component">
+              <h2>PASSIONS</h2>
+              <p>Cuisine</p>
+              <p class="small mb-2">Pâtisserie</p>
+              <p>Sport</p>
+              <p class="small">Sports de raquettes</p>
+            </div>
+            <div class="left-component">
+              <h2>PROJETS</h2>
+              <p>Créer une ESN</p>
+              <p class="small mb-2">Après mes études</p>
+              <p>Enseigner</p>
+              <p class="small">Dans un futur lointain</p>
+            </div>
+            <div class="left-component">
+              <h2>LANGUES</h2>
+              <p>Anglais</p>
+              <p class="small mb-2">Courant</p>
+              <p>Arménien</p>
+              <p class="small">Maternelle</p>
+            </div>
+          </div>
+          <!--<span id="fr">Bonjour, je suis un texte en français !</span>
+          <span id="en" class="d-none">Hello, i'm a text in english !</span>-->
+        </div>
+        <div class="right-side col ">
+          <div class="themes d-flex flex-row gap-3 mx-lg-3 mt-lg-3 mb-5 position-absolute top-0 end-0">
+            <button onclick="colorSwitch('')" class="color-mode blue" type="button"></button>
+            <button onclick="colorSwitch('css/red.css')" class="btn color-mode red" type="button"></button>
+            <button onclick="colorSwitch('css/green.css')" class="btn color-mode green" type="button"></button>
+            <!--<div class="vertical-divider"></div>
+            <button onclick="languageSwitch('fr')" class="btn language-mode french" type="button"></button>
+            <button onclick="languageSwitch('en')" class="btn language-mode english" type="button"></button>-->
+          </div>
+          <h1 class="display-3 title">CURRICULUM VITÆ</h1>
+          <div class="right-component">
+              <h2>COMPÉTENCES</h2>
+              <p>Administration de base de données</p>
+              <p class="small mb-3">MySQL, SQL Server</p>
+              <p>Programmation Web</p>
+              <p class="small mb-3">HTML, CSS, JavaScript, PHP, WordPress, Laravel</p>
+              <p>Programmation orientée objet</p>
+              <p class="small mb-3">C, C#, Java, PHP</p>
+              <p>Administration de réseaux</p>
+              <p class="small mb-3">Windows Server, Linux</p>
+              <p>Gestion de projet</p>
+              <p class="small">Méthode Agile SCRUM</p>
+          </div>
+          <div class="right-component">
+              <h2>FORMATIONS</h2>
+              <p>L3 MIAGE, Nice</p>
+              <p class="small mb-3">En cours</p>
+              <p>BTS SIO option SLAM, Saint-Raphaël</p>
+              <p class="small mb-3">2019-2021 – <b>Major de promotion</b></p>
+              <p>Baccalauréat SIG, Saint-Raphaël</p>
+              <p class="small">2018-2019 – <b>Mention Bien</b></p>
+          </div>
+          <div class="right-component">
+              <h2>EXPÉRIENCES PROFESSIONNELLES</h2>
+              <p>Agence <a href="https://agence-lafab.fr/" target="_blank">LAFAB</a>, Saint-Raphaël</p>
+              <p class="small mb-3">Mai 2021 - CDD, 5 jours (démission pour raison de santé) – Conception de Site Web</p>
+              <p>Agence <a href="https://agence-lafab.fr/" target="_blank">LAFAB</a>, Saint-Raphaël</p>
+              <p class="small mb-3">Février 2021 - 6 Semaines de Stage – Conception de Site Web</p>
+              <p>Différents restaurants, différents lieux</p>
+              <p class="small">Étés 2017-2020 – Barman/Serveur</p>
+          </div>
+          <p class="text-center text-md-end">2021 - ARMAN HAKOBYAN</p>
+        </div>
+      </section>
+    </main>
+
+    <script type="text/javascript">
+      var css = localStorage.getItem('A-Hakobyan_colorMode')
+      document.getElementById("pageColor").setAttribute('href', css);
+  
+      function colorSwitch(css) {
+        document.getElementById("pageColor").setAttribute('href', css);
+  
+        localStorage.setItem('A-Hakobyan_colorMode', css)
+      }
+    </script>
+
+    <script type="text/javascript">
+      /*function languageSwitch(lang) {
+        if(lang === 'fr') {
+          document.getElementById("en").classList.remove('d-block'); document.getElementById("en").classList.add('d-none');
+          document.getElementById("fr").classList.remove('d-none'); document.getElementById("fr").classList.add('d-block');
+        }
+        if(lang === 'en') {
+          document.getElementById("fr").classList.remove('d-block'); document.getElementById("fr").classList.add('d-none');
+          document.getElementById("en").classList.remove('d-none'); document.getElementById("en").classList.add('d-block');
+        }
+      }*/
+    </script>
+  </body>
+</html>

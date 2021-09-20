@@ -1,0 +1,37 @@
+* {
+    color: brown!important;
+}
+
+body {
+    background: rgb(36,0,0);
+    background: linear-gradient(45deg, rgba(36,0,0,0) 0%, rgba(208,184,132,0.8799894957983193) 0%, rgba(170,32,32,0.6250875350140056) 45%, rgba(117,15,18,0.804359243697479) 97%);
+}
+
+h1, h3 {
+    color: rgb(136, 35, 35)!important;
+}
+
+.user-info img {
+    width: 75%;
+    height: auto;
+    border: rgb(136, 35, 35) 5px solid;
+}
+
+::-webkit-scrollbar-thumb {
+    background: brown; 
+}
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(136, 35, 35); 
+}
+
+.vertical-divider {
+    border-left: 3px solid rgb(136, 35, 35);
+    height: auto;
+}
+
+@media screen and (max-width: 767px) {
+    body {
+      background: rgb(167, 104, 104);
+    }
+}  
